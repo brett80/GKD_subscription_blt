@@ -3,6 +3,7 @@ import { defineGkdApp } from '@gkd-kit/define';
 export default defineGkdApp({
   id: 'com.sdu.didi.psnger',
   name: '滴滴出行',
+  enable:false,
   groups: [
     {
       key: 1,
