@@ -9,11 +9,11 @@ import globalGroups from './globalGroups';
 //const rawApps: RawApp[] = [];
 //apps.forEach((appConfig) => {
 //  appConfig.groups?.forEach((g: RawAppGroup) => {
-    //if (g.name.startsWith('开屏广告')) {
+//if (g.name.startsWith('开屏广告')) {
 //      g.order = OPEN_AD_ORDER;
-    //}
+//}
 //  });
-  //rawApps.push(appConfig);
+//rawApps.push(appConfig);
 //});
 
 export default defineGkdSubscription({
@@ -22,7 +22,8 @@ export default defineGkdSubscription({
   version: 1,
   author: 'blt',
   checkUpdateUrl: './gkd.version.json5',
-  supportUri: 'https://github.com/brett80/GKD_subscription_blt/issues/new/choose',
+  supportUri:
+    'https://github.com/brett80/GKD_subscription_blt/issues/new/choose',
   categories,
   globalGroups,
   apps: await batchImportApps(`${import.meta.dirname}/apps`),
