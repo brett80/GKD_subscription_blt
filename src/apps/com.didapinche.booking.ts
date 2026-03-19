@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 1,
-      name: '弹窗广告',//我的首页
+      name: '弹窗广告', //我的首页
       rules: [
         {
           fastQuery: true,
@@ -17,7 +17,7 @@ export default defineGkdApp({
         },
       ],
       key: 2,
-      name: '弹窗广告',//我的--》钱包
+      name: '弹窗广告', //我的--》钱包
       rules: [
         {
           fastQuery: true,
@@ -26,10 +26,10 @@ export default defineGkdApp({
         },
       ],
       key: 3,
-      name: '弹窗广告',
+      name: '弹窗广告', //我的--》全部订单、接单记录
       rules: [
         {
-          fastQuery: true,//我的--》全部订单、接单记录
+          fastQuery: true,
           activityIds: 'com.baidu.mobads.sdk.api.MobRewardVideoActivity',
           matches: '@ImageView <3 RelativeLayout < RelativeLayout < RelativeLayout < [id="android:id/content"]',
         },
